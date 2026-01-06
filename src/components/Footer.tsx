@@ -47,12 +47,17 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-border/50 my-5" />
 
-        {/* Copyright */}
-        <div className="text-center">
-          <p className="text-[10px] text-muted-foreground">
-            © {new Date().getFullYear()} Urbanbuild™ PVT LTD. All rights reserved.
-          </p>
-        </div>
+        {/* Copyright Section */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+            <p className="text-[10px] text-muted-foreground">
+                  {new Date().getFullYear()} Urbanbuild™ PVT LTD. All rights reserved.
+             </p>
+
+              <p className="text-[10px] text-muted-foreground">
+                  © Designed & Managed By Team Harsh Soni.
+              </p>
+              </div>
+
       </div>
     </footer>
   );
