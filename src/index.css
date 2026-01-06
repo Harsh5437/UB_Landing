@@ -239,3 +239,26 @@
     transform: translateY(-10px);
   }
 }
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-track {
+  animation: scroll-x 30s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .slider-track {
+    animation: none;
+  }
+}
